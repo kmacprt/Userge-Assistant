@@ -18,20 +18,19 @@ if os.path.isfile("config.env"):
 
 class Config:
     """ assistant configs """
-    APP_ID = int(os.environ.get("APP_ID", 0))
+    APP_ID = int(os.environ.get("APP_ID", ))
     API_HASH = os.environ.get("API_HASH")
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
-    AUTH_CHATS = set([-1001481357570])  # @UserGeOt
+    AUTH_CHATS = set([-1001470978862])  # @UserGeOt
     if os.environ.get("AUTH_CHATS"):
         AUTH_CHATS.update(map(int, os.environ.get("AUTH_CHATS").split()))
-    WHITELIST_CHATS = set([-1001465749479])  # @UserGeSpam
+    WHITELIST_CHATS = set([-1001470978862])  # @UserGeSpam
     if os.environ.get("WHITELIST_CHATS"):
         WHITELIST_CHATS.update(map(int, os.environ.get("WHITELIST_CHATS").split()))
     DEV_USERS = (
-        1158855661,  # @Krishna_Singhal
-        1110621941,  # @PhycoNinja13b
-        921420874,   # @juznem
-        837784353    # @rking_32
+        1131653685,  # @kavinduaj
+        1107959621,  # @PhycoNinja13b
+        1156597097,   # @juzne
     )
     ADMINS = {}
     MAX_MSG_LENGTH = 4096
